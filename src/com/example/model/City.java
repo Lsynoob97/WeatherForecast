@@ -13,11 +13,11 @@ public class City {
 	public void setId(int id){
 		this.id=id;
 	}
-		public String cityName(){
+		public String getCityName(){
 			return cityName;
 		}
-		public void setCityName(String cityName){
-			this.cityName=cityName;
+		public void setCityName(String CityName){
+			this.cityName=CityName;
 		}
 		public String getCityCode(){
 			return cityCode;
