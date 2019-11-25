@@ -26,7 +26,7 @@ public class Utility {
 	public synchronized static boolean handleProvincesResponse(
 			CoolWeatherDB coolWeatherDB, String response) {
 		if (!TextUtils.isEmpty(response)) {
-			String[] allProvinces = response.split(",");
+			String[] allProvinces = response.split(",   ");
 			if (allProvinces != null && allProvinces.length > 0) {
 				for (String p : allProvinces) {
 					String[] array = p.split("\\|");
