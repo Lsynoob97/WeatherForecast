@@ -15,23 +15,25 @@ public class HttpUtil {
 			public void run() {
 				HttpURLConnection connection = null;
 				try {
-					URL url = new URL(address); //创建URL实例，打开URLConnection
-					connection = (HttpURLConnection) url.openConnection(); //得到connection对象。
-					connection.setRequestMethod("GET"); //设置请求方式
-					connection.setConnectTimeout(8000); //超时链接时间设置为8秒
+					URL url = new URL(address);
+					connection = (HttpURLConnection) url.openConnection();
+					connection.setRequestMethod("GET");
+					connection.setConnectTimeout(8000);
 					connection.setReadTimeout(8000);
-					InputStream in = connection.getInputStream(); //读取外部链接数据
-					BufferedReader reader = new BufferedReader(new InputStreamReader(in)); //读数据：
+					InputStream in = connection.getInputStream();
+					BufferedReader reader = new BufferedReader(new InputStreamReader(in));
 					StringBuilder response = new StringBuilder();
 					String line;
 					while ((line = reader.readLine()) != null) {
 						response.append(line);
 					}
 					if (listener != null) {
+						
 						listener.onFinish(response.toString());
 					}
 				} catch (Exception e) {
 					if (listener != null) {
+						
 						listener.onError(e);
 					}
 				} finally {
