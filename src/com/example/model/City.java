@@ -1,36 +1,46 @@
 package com.example.model;
 
-public class City {
-	private String cityName;
-	private String cityCode;
-	private int ProvinceId;
-	private int id;
+	public class City {
 
-		// TODO Auto-generated constructor stub
-	public int getId(){
-		return id;
-	}
-	public void setId(int id){
-		this.id=id;
-	}
-		public String getCityName(){
+		private int id;
+
+		private String cityName;
+
+		private String cityCode;
+
+		private int provinceId;
+
+		public int getId() {
+			return id;
+		}
+
+		public void setId(int id) {
+			this.id = id;
+		}
+
+		public String getCityName() {
 			return cityName;
 		}
-		public void setCityName(String CityName){
-			this.cityName=CityName;
+
+		public void setCityName(String cityName) {
+			this.cityName = cityName;
 		}
-		public String getCityCode(){
+
+		public String getCityCode() {
 			return cityCode;
 		}
-		public  void setCityCode(String cityCode){
-			this.cityCode=cityCode;
-		}
-		public int getProvinceId(){
-			return ProvinceId;
-		}
-		public void setProvinceId(int ProvinceId){
-			this.ProvinceId=ProvinceId;
+
+		public void setCityCode(String cityCode) {
+			this.cityCode = cityCode;
 		}
 
+		public int getProvinceId() {
+			return provinceId;
+		}
 
-}
+		public void setProvinceId(int provinceId) {
+			this.provinceId = provinceId;
+		}
+
+	}
+

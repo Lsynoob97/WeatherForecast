@@ -9,7 +9,13 @@
 <Button android:id="@+id/refreshweather" android:layout_width="30dp" android:layout_height="30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="10dp" android:background="@drawable/refresh"/>
 </RelativeLayout>
 <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:background="#27A5F9">
-<TextView android:id="@+id/publishtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:textColor="#FFF" android:textSize="18sp"/>
+<TextView 
+    android:id="@+id/publishtext"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+      android:layout_alignParentRight="true" 
+      android:layout_marginRight="10dp" android:layout_marginTop="10dp" 
+      android:textColor="#FFF" android:textSize="18sp"/>
 <LinearLayout android:id="@+id/weatherinfolayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:orientation="vertical">
 <TextView android:id="@+id/currentdate" android:layout_width="wrap_content" android:layout_height="40dp" android:gravity="center" android:textColor="#FFF" android:textSize="18sp"/>
 <TextView android:id="@+id/weatherdesp" android:layout_width="wrap_content" android:layout_height="60dp" android:layout_gravity="center_horizontal" android:gravity="center" android:textColor="#FFF" android:textSize="40sp"/>
